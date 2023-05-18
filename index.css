@@ -65,8 +65,11 @@ button {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: brown;
-    animation: rot 5s 
+    animation: rot 5s ;
 }
+/* .toggle.h1{
+    visibility: hidden;
+} */
 @keyframes rot {
     0%{
         transform: rotateY(0deg);

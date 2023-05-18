@@ -19,8 +19,12 @@ class Counter extends React.Component {
     this.setState({count:this.state.count+1,taps:this.state.taps+1})
   }
   Decrement (){
+    if(this.state.count>0){
     this.setState({count:this.state.count-1,taps:this.state.taps+1})
+  }else{
+    this.setState({taps:this.state.taps+1})
   }
+}
   ReseT(){
     this.setState({count:this.state.count=0,taps:this.state.taps+1})
   }
@@ -28,7 +32,7 @@ class Counter extends React.Component {
 this.setState({count:this.state.count=0,taps:this.state.taps=0,tog:!this.state.tog})
 setTimeout(() => {
     this.setState({tog:this.state.tog=true})
-  }, 5000);
+  }, 4999);
   }
  
 
