@@ -26,6 +26,9 @@ class Counter extends React.Component {
   }
   ResetAll(){
 this.setState({count:this.state.count=0,taps:this.state.taps=0,tog:!this.state.tog})
+setTimeout(() => {
+    this.setState({tog:this.state.tog=true})
+  }, 5000);
   }
  
 
