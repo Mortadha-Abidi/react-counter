@@ -58,3 +58,20 @@ button {
 .reset-all {
     background-color: lightcoral;
 }
+
+.toggle {
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: rot 5s 
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+    
+}
